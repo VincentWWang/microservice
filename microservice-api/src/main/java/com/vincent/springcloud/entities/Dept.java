@@ -8,7 +8,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- *
+ *  lombok，为实体类生成常用方法：构造器、set、get等。
  * @Author Vincent
  * @datetime 2019/9/23-10:06
  */
@@ -20,6 +20,6 @@ public class Dept implements Serializable {//微服务中实体 必须序列化
 
     private Long deptNo;//主键
     private String deptName;//部门名称
-    private String dbSrouce;//确定在哪个数据库管理。因为微服务架构 一个服务对应一个数据库，同一个信息存储在不同数据库
+    private String dbSource;//确定在哪个数据库管理。因为微服务架构 一个服务对应一个数据库，同一个信息存储在不同数据库
 
 }

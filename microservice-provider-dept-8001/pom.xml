@@ -58,14 +58,14 @@
         </dependency>
 
         <!-- 热部署，修改后立即编译 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>springladed</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>springladed</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-devtools</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
 
 </project>
