@@ -42,4 +42,10 @@ public class DeptController_Consumer {
         return restTemplate.postForObject(REST_URL_PREFIX + "/dept/add", dept, Boolean.class);
     }
 
+    //消费者 调用服务发现
+    @GetMapping("/consumer/dept/discovery")
+    public Object discovery(){
+        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/discovery", Object.class);
+    }
+
 }
