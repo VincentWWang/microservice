@@ -2,20 +2,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-    <!-- 子模块里显示声明parent才能有明确的继承表现，继承后默认使用父类定义的依赖版本。否则自己定义 -->
     <parent>
         <artifactId>microservice</artifactId>
         <groupId>com.vincent.springcloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <!-- 子模块<packaging>为jar -->
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>microservice-api</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>microservice-comsumer-dept-feign</artifactId>
 
     <dependencies>
+        <dependency>
+            <!-- 自定义api使用 -->
+            <groupId>com.vincent.springcloud</groupId>
+            <artifactId>microservice-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- SpringBoot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
         <!-- Feign相关 -->
         <dependency>
@@ -24,10 +32,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>springloaded</artifactId>
         </dependency>
     </dependencies>
-
 
 </project>

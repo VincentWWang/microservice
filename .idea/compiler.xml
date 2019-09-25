@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="microserviceapi" />
         <module name="microservicecomsumerdept80" />
+        <module name="microservicecomsumerdeptfeign" />
         <module name="microserviceeureka7001" />
         <module name="microserviceeureka7002" />
         <module name="microserviceeureka7003" />
