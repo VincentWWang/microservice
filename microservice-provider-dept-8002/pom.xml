@@ -9,23 +9,48 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>microservice-comsumer-dept-80</artifactId>
+    <artifactId>microservice-provider-dept-8002</artifactId>
 
     <dependencies>
+
+        <!-- 自定义api使用 -->
         <dependency>
-            <!-- 自定义api使用 -->
             <groupId>com.vincent.springcloud</groupId>
             <artifactId>microservice-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <!-- 数据库驱动、连接池 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
+
+        <!-- 日志 -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+        </dependency>
+
         <!-- SpringBoot -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
 
-        <!-- Ribbon相关 -->
+        <!-- 将微服务提供者注册进Eureka -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
@@ -34,14 +59,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
+        <!-- 保证查看服务 info信息的依赖 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>springloaded</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 

@@ -24,7 +24,9 @@ public class DeptController_Consumer {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    //按照微服务名称 访问微服务
+    private static final String REST_URL_PREFIX = "http://MICROSERVICE-DEPT";
 
     @GetMapping("/consumer/dept/list")
     public List<Dept> list(){

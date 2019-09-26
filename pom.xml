@@ -23,6 +23,8 @@
         <module>microservice-eureka-7002</module>
         <module>microservice-eureka-7003</module>
         <module>microservice-comsumer-dept-feign</module>
+        <module>microservice-provider-dept-8002</module>
+        <module>microservice-provider-dept-8003</module>
     </modules>
 
     <properties>
