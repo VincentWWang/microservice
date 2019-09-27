@@ -25,6 +25,8 @@
         <module>microservice-comsumer-dept-feign</module>
         <module>microservice-provider-dept-8002</module>
         <module>microservice-provider-dept-8003</module>
+        <module>microservice-provider-dept-hystrix-8001</module>
+        <module>microservice-comsumer-hystrix-dashboard</module>
     </modules>
 
     <properties>

@@ -22,4 +22,27 @@ public class Dept implements Serializable {//微服务中实体 必须序列化
     private String deptName;//部门名称
     private String dbSource;//确定在哪个数据库管理。因为微服务架构 一个服务对应一个数据库，同一个信息存储在不同数据库
 
+    public Long getDeptNo() {
+        return deptNo;
+    }
+
+    public void setDeptNo(Long deptNo) {
+        this.deptNo = deptNo;
+    }
+
+    public String getDeptName() {
+        return deptName;
+    }
+
+    public void setDeptName(String deptName) {
+        this.deptName = deptName;
+    }
+
+    public String getDbSource() {
+        return dbSource;
+    }
+
+    public void setDbSource(String dbSource) {
+        this.dbSource = dbSource;
+    }
 }

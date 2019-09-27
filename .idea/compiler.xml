@@ -9,12 +9,14 @@
         <module name="microserviceapi" />
         <module name="microservicecomsumerdept80" />
         <module name="microservicecomsumerdeptfeign" />
+        <module name="microservicecomsumerhystrixdashboard" />
         <module name="microserviceeureka7001" />
         <module name="microserviceeureka7002" />
         <module name="microserviceeureka7003" />
         <module name="microserviceproviderdept8001" />
         <module name="microserviceproviderdept8002" />
         <module name="microserviceproviderdept8003" />
+        <module name="microserviceproviderdepthystrix8001" />
       </profile>
     </annotationProcessing>
   </component>

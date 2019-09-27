@@ -12,7 +12,8 @@ import java.util.List;
  * @Author Vincent
  * @datetime 2019/9/25-10:58
  */
-@FeignClient("MICROSERVICE-DEPT")
+//@FeignClient("MICROSERVICE-DEPT")
+@FeignClient(value = "MICROSERVICE-DEPT", fallbackFactory = DeptClientServiceFallBackFactory.class)
 public interface DeptClientService {
 
     @GetMapping("/dept/list")
