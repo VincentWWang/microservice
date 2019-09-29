@@ -7,11 +7,13 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
+ * 根据DeptClientService接口，创建默认响应。
  * @Author Vincent
  * @datetime 2019/9/27-11:01
  */
 @Component
 public class DeptClientServiceFallBackFactory implements FallbackFactory<DeptClientService> {
+
     @Override
     public DeptClientService create(Throwable throwable) {
         return new DeptClientService() {

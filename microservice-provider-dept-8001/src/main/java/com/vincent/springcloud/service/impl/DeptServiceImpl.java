@@ -18,7 +18,6 @@ public class DeptServiceImpl implements DeptService {
     @Autowired
     private DeptDao deptDao;
 
-
     @Override
     public List<Dept> list() {
         List<Dept> deptList = deptDao.findAll();
@@ -28,6 +27,9 @@ public class DeptServiceImpl implements DeptService {
     @Override
     public Dept get(Long id) {
         Dept dept = deptDao.findById(id);
+        if (dept == null){
+            throw new NullPointerException("不存在");
+        }
         return dept;
     }
 
