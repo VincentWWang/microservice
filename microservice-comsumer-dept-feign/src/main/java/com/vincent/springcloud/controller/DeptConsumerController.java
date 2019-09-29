@@ -2,12 +2,12 @@ package com.vincent.springcloud.controller;
 
 import com.vincent.springcloud.entities.Dept;
 import com.vincent.springcloud.service.DeptClientService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -17,7 +17,7 @@ import java.util.List;
 @RestController
 public class DeptConsumerController {
 
-    @Resource
+    @Autowired
     private DeptClientService deptClientService;
 
     @GetMapping("/consumer/dept/list")

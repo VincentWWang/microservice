@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import java.util.List;
 
 /**
+ * Feign接口
  * @Author Vincent
  * @datetime 2019/9/25-10:58
  */
-//@FeignClient("MICROSERVICE-DEPT")
-@FeignClient(value = "MICROSERVICE-DEPT", fallbackFactory = DeptClientServiceFallBackFactory.class)
+@FeignClient("MICROSERVICE-DEPT")
+//@FeignClient(value = "MICROSERVICE-DEPT", fallbackFactory = DeptClientServiceFallBackFactory.class)
 public interface DeptClientService {
 
     @GetMapping("/dept/list")
